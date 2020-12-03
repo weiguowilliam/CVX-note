@@ -1,0 +1,17 @@
+\subsection{Sinkhorn-Knopp algorithm}
+
+
+The Sinkhorn–Knopp algorithm is a
+simple iterative algorithm to calculate the the double stochastic matrix. It alternately re-scale all the rows and all the columns of matrix $A$ to sum to $1$. Sinkhorn and Knopp \cite{sinkhorn1967concerning} published this algorithm and made analysis about its convergence.
+
+
+
+The Sinkhorn-Knopp algorithm comes from the Sinkhorn's theorem\cite{sinkhorn1964relationship,vialard2019elementary}: 
+every square matrix with positive entries can be written in a certain standard form. In a formal form, If A is an $n × n$ matrix with strictly positive elements, then there exist diagonal matrices $D_1$ and $D_2$ with strictly positive diagonal elements such that $D_1 A D_2$ is doubly stochastic. The matrices $D_1$ and $D_2$ are unique modulo multiplying the first matrix by a positive number and dividing the second one by the same number \cite{marshall1968scaling}. 
+The following analogue for the unitary matrices is also correct: for each unitary matrix $U$, there must exist two diagonal unitary matrices $L$ and $R$ such that $LUR$ has each of its columns and rows summing to 1 \cite{idel2015sinkhorn}.
+
+However, the simplicity of the Sinkhorn-Knopp algorithm has led to its repeated discovery \cite{knight2008sinkhorn}.
+The method is first claimed to be used in the 1930s for calculation of the traffic flow \cite{bregman1967proof}. In 1937, it appeared again as an algorithm to predict the telephone traffic distribution \cite{kruithof1937telefoonverkeersrekening}.
+
+
+
